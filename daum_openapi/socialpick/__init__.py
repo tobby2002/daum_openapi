@@ -1,1 +1,1 @@
-from socialpick import *
+from .socialpick import *

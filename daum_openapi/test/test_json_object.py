@@ -14,7 +14,7 @@ class TestJsonObjectFunctions(unittest.TestCase):
         self.testDict['name'] = u"ash84"
         self.testDict['age'] = 30
         
-        like = ['comic','coding','tv'];
+        like = ['comic','coding','tv']
         self.testDict['like'] = like
         
         

@@ -16,7 +16,7 @@ class contents(object):
 
     def __init__(self, apikey):
         if apikey is None:
-            print "apikey is None."
+            print ("apikey is None.")
         else:
             self.apikey = apikey
 
@@ -31,4 +31,4 @@ class contents(object):
 
 if __name__ == "__main__":
     ct = contents("b3e0456c1bf9facc191106ca35f9871141cb435a")
-    print ct.movie("공범", 3, 1, "json")
+    print(ct.movie("공범", 3, 1, "json"))

@@ -15,7 +15,7 @@ class search(object):
 
     def __init__(self, apikey):
         if apikey is None:
-            print "apikey is None."
+            print("apikey is None.")
         else:
             self.apikey = apikey
 

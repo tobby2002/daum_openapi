@@ -13,7 +13,7 @@ class TestSocialPickFunctions(unittest.TestCase):
 
     sp = None
     def setUp(self):
-        self.sp = socialpick("a4c8c716d0d6c2d652cede75a6c688dba9d0164c")
+        self.sp = socialpick("registeredkey")
 
     def test_category_c(self):
         rc = self.sp.search(5,'c', 'json')

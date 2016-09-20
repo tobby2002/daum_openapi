@@ -16,7 +16,7 @@ class socialpick(object):
 
     def __init__(self, apikey):
         if apikey is None:
-            print "apikey is None."
+            print("apikey is None.")
         else:
             self.apikey = apikey
 
@@ -33,6 +33,6 @@ class socialpick(object):
         return request(self.base_url+"/search", params=params)
 
 if __name__ == "__main__":
-    sp = socialpick("a4c8c716d0d6c2d652cede75a6c688dba9d0164c")
-    print sp.search(10, "c", "json")
-    print sp.search(n=10, output="json")
+    sp = socialpick("registeredkey")
+    print(sp.search(10, "c", "json"))
+    print(sp.search(n=10, output="json"))

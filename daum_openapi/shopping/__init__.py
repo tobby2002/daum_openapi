@@ -1,1 +1,1 @@
-from shopping import *
+from .shopping import *

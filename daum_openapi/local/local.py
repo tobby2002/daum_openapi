@@ -17,7 +17,7 @@ class local(object):
 
     def __init__(self, apikey):
         if apikey is None:
-            print "apikey is None."
+            print ("apikey is None.")
         else:
             self.apikey = apikey
 
@@ -51,6 +51,6 @@ class local(object):
 
 if __name__ == "__main__":
     lc = local("48408559bb754dd16c517a5fd6d01e376a4be151")
-    print lc.addr2coord(u"대학로", 1, "json")
-    print lc.coord2addr('37.507502379027', '127.05590291409', 'WGS84', 'simple', "json")
-    print lc.transcoord('37.507502379027', '127.05590291409', 'WGS84', 'TM', "json")
+    print(lc.addr2coord(u"대학로", 1, "json"))
+    print(lc.coord2addr('37.507502379027', '127.05590291409', 'WGS84', 'simple', "json"))
+    print(lc.transcoord('37.507502379027', '127.05590291409', 'WGS84', 'TM', "json"))

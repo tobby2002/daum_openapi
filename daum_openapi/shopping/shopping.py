@@ -6,7 +6,7 @@ Created on 2013. 11. 2.
 import sys
 sys.path.append("../common/")
 
-from daum_openapi.common import *
+from daum_openapi.common import request
 
 
 class shopping(object):
@@ -15,7 +15,7 @@ class shopping(object):
 
     def __init__(self, apikey):
         if apikey is None:
-            print "apikey is None."
+            print ("apikey is None.")
         else:
             self.apikey = apikey
 
@@ -42,6 +42,6 @@ class shopping(object):
         return request(self.base_url+"/detail", params=params)
 
 if __name__ == "__main__":
-    sp = shopping("043a78c6b4c1df8335e2fe33917ff5f616eff3f6")
-   # print sp.search(u"사과", 3,1,"pop","json")
-    print sp.detail(u"K91469436", 'json')
+    sp = shopping("registeredkey") # registeredkey
+    print (sp.search(u"사과", 3,1,"pop","json"))
+    print (sp.detail(u"K91469436", 'json'))

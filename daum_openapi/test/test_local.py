@@ -12,19 +12,19 @@ class TestLocalApiFunctions(unittest.TestCase):
 
     lc = None
     def setUp(self):
-        self.lc = local("48408559bb754dd16c517a5fd6d01e376a4be151")
+        self.lc = local("registeredkey")
 
     def test_addr2coord_json(self):
         rc = self.lc.addr2coord(u"대학로", 1,"json")
-        self.assertEqual(int(rc.channel.pageCount), 153);
+        self.assertEqual(int(rc.channel.pageCount), 153)
         
     def test_addr2coord_xml(self):    
         rc = self.lc.addr2coord(u"대학로", 1,"xml")
-        self.assertEqual(int(rc.channel.pageCount), 153);
+        self.assertEqual(int(rc.channel.pageCount), 153)
         
     def test_add2coord_pageno_zero(self):
         rc =  self.lc.addr2coord(u"대학로", 0,"json")
-        self.assertEqual(rc.channel.apierror.message, 'page_no:[0]:(Belowed minimum value)1');
+        self.assertEqual(rc.channel.apierror.message, 'page_no:[0]:(Belowed minimum value)1')
         
     def test_coord2addr(self):
         {"name3":"삼성2동","code":"1123059","name1":"서울특별시","name2":"강남구"}
