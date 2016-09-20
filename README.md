@@ -4,11 +4,11 @@ daum_openapi
 [![Build Status](https://travis-ci.org/AhnSeongHyun/daum_openapi.png)](https://travis-ci.org/AhnSeongHyun/daum_openapi)
 <br/>
 
-Python library for Daum Open Data API. 
+Python3 library for Daum Open Data API. 
 <br/> 
 <h4>Install</h4>
 ```
-pip install daum_openapi
+--> use sourcefolder:daum_openapi --> pip install daum_openapi
 ```
 <br/> 
 <h4>Features</h4>
